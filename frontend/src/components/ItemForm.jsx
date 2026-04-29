@@ -59,7 +59,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />
 
       <label>Discount Percentage</label>
-      <input type="number" name="discountPercentage" value={formData.discountPercentage} required />
+      <input type="number" name="discountPercentage" value={formData.discountPercentage} onChange={handleChange} required />
 
       <button className="btn primary" type="submit">{submitText}</button>
     </form>
